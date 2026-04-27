@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Video</title>
+    <style>
+        /* Estilos base responsivos */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background-color: #f0f2f5; color: #333; }
+        .wrapper { max-width: 900px; margin: 0 auto; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        
+        /* Contenedor de Video fluido */
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; margin-bottom: 20px; }
+        .video-container iframe, .video-container video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+
+        .sinopsis { line-height: 1.6; margin: 20px 0; font-size: 1.1rem; text-align: center; }
+        
+        /* Formulario responsivo */
+        .form-container { width: 100%; margin-top: 30px; }
+        .form-container iframe { width: 100%; min-height: 600px; border: none; }
+
+        /* Logos que se adaptan */
+        .logos-section { margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px; }
+        .logos-grid { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 30px; }
+        .logos-grid img { max-width: 120px; height: auto; opacity: 0.8; transition: 0.3s; }
+        
+        /* Ajustes para celulares */
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .wrapper { padding: 15px; }
+            .logos-grid img { max-width: 80px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <h1 style="text-align:center">Título del Proyecto</h1>
+
+    <!-- 1. VIDEO (YouTube o Vimeo recomendado para carga rápida) -->
+    <div class="video-container">
+        <!-- Reemplaza este link por el de tu video -->
+        <iframe src="https://youtube.com" allowfullscreen></iframe>
+    </div>
+
+    <!-- 2. SINOPSIS -->
+    <div class="sinopsis">
+        <p>Esta es una sinopsis corta y potente. Aquí describes tu proyecto de forma que enganche a quien lo vea desde su móvil o PC.</p>
+    </div>
+
+    <!-- 3. ENCUESTA -->
+    <div class="form-container">
+        <!-- Pega aquí el link de tu Google Form -->
+        <iframe src="LINK_DE_TU_GOOGLE_FORM_AQUI">Cargando…</iframe>
+    </div>
+
+    <!-- 4. LOGOS AUSPICIADORES -->
+    <div class="logos-section">
+        <p style="text-align:center; color: #888;">Nuestros Auspiciadores</p>
+        <div class="logos-grid">
+            <img src="logo1.png" alt="Sponsor 1">
+            <img src="logo2.png" alt="Sponsor 2">
+            <img src="logo3.png" alt="Sponsor 3">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
